@@ -12,9 +12,7 @@ class Parliament:
          possible coalitions and calculating array of those possible coalitions'''
         # generate all possible permutations
         permutations_ = permutations(self.parties)
-        # create array of possible coalitions above threshold
         coalitions = []
-        # create dic for storing parties shapley and occurs in possible coalitions above threshold
         parties_dic = {}
         self._add_parties_properties_dict(parties_dic)
         # permutation amount for shapley calculations
